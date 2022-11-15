@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bg{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.bg .image{
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    animation: change 30s infinite ease-in-out;
+}
+@keyframes change {
+    0%{
+        background-image: url(https://images.pexels.com/photos/5380665/pexels-photo-5380665.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+        
+    }
+    25%{
+        background-image: url(pexels-photo-698808.jpeg);
+    }
+    50%{
+        background-image: url(https://images.pexels.com/photos/5380838/pexels-photo-5380838.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    }
+    75%{
+        background-image: url(https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    }
+    100%{
+        background-image: url(https://images.pexels.com/photos/5380665/pexels-photo-5380665.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    }
+}
+.image img{
+    width: 100%;
+    height: 100vh;
+}
+.bg .logo{
+    position: absolute;
+    color: white;
+    top: 4%;
+    left: 5%;
+    font-size: 2rem;
+    transition: all .3s ease;
+}
+.bg .logo:hover{
+    color: red;
+}
+.bg .nav{
+    position: absolute;
+    top: 4%;
+    right: 5%;
+    color: red;
+    font-size: 3rem;
+    font-weight: 100;
+}
+.bg .media{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color: white;
+    right: 5%;
+    font-size: 2rem;
+    top: 15%;
+}
+.bg .media i{
+    transition: all .3s ease;
+    opacity: .6;
+    margin: 18px 0px;
+}
+.bg .media i:hover{
+    opacity: 1;
+}
+.bg .banner{
+    position: absolute;
+    color: white;
+    width: 60%;
+    font-size: 2rem;
+}
+.red{
+    color: red;
+}
+.bg .footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: #000;
+    color: white;
+    width: 100%;
+    padding: 1rem 0rem 2rem;
+    margin: 0;
+    opacity: 1;
+    height: 20vh;
+    align-items: center;
+    align-content: center;
+}
+
+.bg .footer .about{
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 2rem;
+}
+.bg .footer .about .number{
+    font-size: 6rem;
+    font-weight: 1000;
+    transition: all .3s ease;
+}
+.bg .footer .about .number:hover{
+    color: red;
+}
+.bg .footer .about .aboutus{
+    font-size: 2rem;
+    font-weight: 500;
+  
+}
+.bg footer{
+    position: absolute;
+    bottom: 0;
+    background: #000;
+    color: white;
+    
+}
+.navclose{
+    
+    margin-top: -61rem;
+    
+    opacity: 0;
+    transition: all 1s ease;
+}
+.navopen{
+    height: 100vh;
+    margin-top: 0rem;
+    opacity: 1;
+    transition: all 1s ease;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    background: #000;
+    color: white;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navopen .container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+.navopen .container span{
+    position: absolute;
+    top: 6%;
+    right: 5%;
+    font-size: 3rem;
+    color: red;
+}
+.navopen .menu{
+    margin: 1rem 0rem;
+    font-weight: 900;
+    font-size: 5rem;
+    transition: all .3s ease;
+}
+.navopen .menu:hover{
+    color: red;
+}
